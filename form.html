@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+    <div class="form-container">
+    <h2>Feedback Form</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
 
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="age">Age</label>
+      <input type="number" id="age" placeholder="Enter your age" required />
+
+      <label for="role">Which option best describes you?</label>
+      <select id="role" required>
+        <option value="">-- Select an option --</option>
+        <option>Student</option>
+        <option>Professional</option>
+        <option>Intern</option>
+        <option>Self Learner</option>
+        <option>Other</option>
+      </select>
+
+      <label>Would you recommend us to a friend?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="recommend" /> Yes</label>
+        <label><input type="radio" name="recommend" /> No</label>
+        <label><input type="radio" name="recommend" /> Maybe</label>
+      </div>
+
+      <label>Languages and Frameworks known (Check all that apply)</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> C</label>
+        <label><input type="checkbox" /> C++</label>
+        <label><input type="checkbox" /> C#</label>
+        <label><input type="checkbox" /> Java</label>
+        <label><input type="checkbox" /> Python</label>
+        <label><input type="checkbox" /> JavaScript</label>
+        <label><input type="checkbox" /> React</label>
+        <label><input type="checkbox" /> Angular</label>
+        <label><input type="checkbox" /> Django</label>
+        <label><input type="checkbox" /> Spring</label>
+      </div>
+
+      <label for="comment">Any comments or suggestions</label>
+      <textarea id="comment" rows="3" placeholder="Enter your comment here..."></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
